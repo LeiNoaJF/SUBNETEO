@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <title>Subneteo</title>
+</head>
+<body>
+    
+    <center>
+    <section class="cosa_rara_que_contiene1">
+        <section class="titulo">
+            Subneteo</section>
+        <div class="tabs"><br>
+            <p>Cantidad de subredes:</p>
+            <input type="number" id="cantidad" class="input2">
+        </div>
+
+        <div class="container">
+
+                <p>IP</p>
+                <input type="number" id="octeto1" class="ip input" min="0"/>
+                <input type="number" id="octeto2" class="ip input" min="0"/>
+                <input type="number" id="octeto3" class="ip input" min="0"/>
+                <input type="number" id="octeto4" class="ip input" min="0"/>
+                <div class="tabs"> 
+                    <input type="button" value="Subnetear" id="subnetear" onclick="subnetear()" class="btn btnActivo" >
+                    <input type="button" value="Limpiar" onclick="limpiar()" class="btn btnActivo" > 
+
+                </div>
+            <div id="lateral">
+                <div id="resultado" class="input3">
+                   <section class="titulo2">Redes</section> 
+                    <table id="tabla">
+                        <th id = "subredes"> </th>
+                        <th id = "hosts">Subredes hosts</th>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section></center>
+    <script src="js/logica.js" ></script>
+</body>
+</html>
